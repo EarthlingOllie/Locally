@@ -42,9 +42,9 @@ var Locally = {
         }
     },
 
-    session: function(name) {
+    session: {
 
-        function init() {
+        init: function() {
             if(!this._session[name]) {
                 localStorage.setItem(name, []);
             }

@@ -45,12 +45,10 @@ var Locally = {
     session: {
         init: function() {
             if(!this._session[name]) {
-
                 localStorage.setItem(name, []);
             }
         },
         find: function(query) {
-
             console.log(query);
         }
     }

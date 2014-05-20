@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="locally.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="locally.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/locally.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="915">
+            <state line="37" column="24" selection-start="677" selection-end="677" vertical-scroll-proportion="0.49367088" vertical-offset="204" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="120" selection-end="120" vertical-scroll-proportion="0.17467248" vertical-offset="0" max-vertical-offset="687">
+            <state line="8" column="7" selection-start="120" selection-end="120" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -202,16 +202,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locally.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="915">
+        <state line="8" column="7" selection-start="120" selection-end="120" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/locally.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="120" selection-end="120" vertical-scroll-proportion="0.17467248" vertical-offset="0" max-vertical-offset="687">
+        <state line="37" column="24" selection-start="677" selection-end="677" vertical-scroll-proportion="0.49367088" vertical-offset="204" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

@@ -1,13 +1,5 @@
 //Locally, a simple yet efficient way to store local data efficiently.
 
-var inDevelopment = true;
-
-window.log = function(data) {
-    if(inDevelopment) {
-        console.log(data);
-    }
-};
-
 /*
 
  Locally.prototype._init = function() {
@@ -35,13 +27,29 @@ window.log = function(data) {
  */
 
 var Locally = {
+
+    /* Session data will be stored in here */
+    _session: [],
+    /* Persistent storage will be stored in here */
+    _persistent: [],
+
     init: function() {
 
         if(typeof Storage !== 'undefined') {
 
+        } else {
+            console.info('This browser does not support Locally');
+        }
+    },
+
+    session: function(name) {
+        console.log(this);
+
+        if(!this._session[name]) {
+            localStorage.setItem(name, '');
         }
     }
 };
 
 
-log('Your mum');
+Locally.session('test');

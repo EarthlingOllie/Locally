@@ -43,11 +43,13 @@ var Locally = {
     },
 
     session: function(name) {
-        console.log(this);
 
-        if(!this._session[name]) {
-            localStorage.setItem(name, '');
+        function init() {
+            if(!this._session[name]) {
+                localStorage.setItem(name, []);
+            }
         }
+
     }
 };
 

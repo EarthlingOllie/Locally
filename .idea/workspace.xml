@@ -26,7 +26,16 @@
       <file leaf-file-name="locally.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/locally.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="24" selection-start="677" selection-end="677" vertical-scroll-proportion="0.49367088" vertical-offset="204" max-vertical-offset="915">
+            <state line="51" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.8312236" vertical-offset="174" max-vertical-offset="945">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="9" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -52,6 +61,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/locally.js" />
       </list>
     </option>
@@ -209,9 +219,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/locally.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="24" selection-start="677" selection-end="677" vertical-scroll-proportion="0.49367088" vertical-offset="204" max-vertical-offset="915">
+        <state line="51" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.8312236" vertical-offset="174" max-vertical-offset="945">
           <folding />
         </state>
       </provider>

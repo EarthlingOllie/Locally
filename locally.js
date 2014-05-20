@@ -54,7 +54,4 @@ var Locally = {
     }
 };
 
-
 Locally.session('test');
-
-console.log('hello');

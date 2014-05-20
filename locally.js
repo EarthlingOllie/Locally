@@ -50,7 +50,6 @@ var Locally = {
             }
         },
         find: function(query) {
-
             console.log(query);
         }
     }

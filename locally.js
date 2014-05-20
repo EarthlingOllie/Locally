@@ -49,7 +49,6 @@ var Locally = {
                 localStorage.setItem(name, []);
             }
         }
-
     }
 };
 

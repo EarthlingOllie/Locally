@@ -25,15 +25,16 @@ var Locally = {
 	},
 
 	//A representation of all data in localStorage
-	_localData: [],
+	_localData: {},
 
 	//Used for accessing the _localData property
 	set localData(obj) {
 		if(obj.index && obj.value) {
-			if(this._localData[obj.index] && !this._localData[obj.index].protected) {
+			if(!this._localData[obj.index] || (this._localData[obj.index] && !this._localData[obj.index].protected)) {
 				this._localData[obj.index] = obj.value;
+				this.localStorage.setItem(obj.index, obj.value);
 			} else {
-				throw 'localData at index ' + obj.index + 'is protected and cannot be modified.';
+				throw 'localData at index ' + obj.index + ' is protected and cannot be modified.';
 			}
 		} else {
 			throw 'localData expects an index at Obj.index and value at Obj.value';
@@ -44,23 +45,24 @@ var Locally = {
 	},
 
 	//A representation of all data in sessionStorage
-	_sessionData: [],
+	_sessionData: {},
 
 	//Used for accessing the _sessionData property
 	set sessionData(obj) {
 		if(obj.index && obj.value) {
 			if(this._sessionData[obj.index] && !this._sessionData[obj.index].protected) {
 				this._sessionData[obj.index] = obj.value;
+				this.sessionStorage.setItem(obj.index, obj.value);
 			} else {
-				throw 'sessionData at index ' + obj.index + 'is protected and cannot be modified.';
+				throw 'sessionData at index ' + obj.index + ' is protected and cannot be modified.';
 			}
 		} else {
 			throw 'sessionData expects an index at Obj.index and value at Obj.value';
-		}    },
+		}
+	},
 	get sessionData() {
 		return this._sessionData;
 	},
-
 
 	//Initialise the Locally Object
 	init: function() {
@@ -68,6 +70,11 @@ var Locally = {
 		if(typeof Storage !== 'undefined') {
 
 			this.localStorage = localStorage;
+
+			for(var key in this.localStorage) {
+				this.localData[key] = this.localStorage[key];
+			}
+
 			this.sessionStorage = sessionStorage;
 		} else {
 			console.info('Locally isn\'t supported on this browser.');
@@ -77,5 +84,7 @@ var Locally = {
 
 
 Locally.init();
-Locally.localStorage.setItem('Hello', 'There');
-console.log(localStorage.getItem('Hello'));
+localStorage.clear();
+for(var i=1; i<=1000; i++){
+	Locally.localData = { index: i, value:'test' };
+}
